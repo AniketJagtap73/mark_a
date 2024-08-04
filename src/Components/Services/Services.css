@@ -1,29 +1,28 @@
-.services{
-    margin:80px auto;
-    width:90%;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.services {
+    margin: 80px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Use repeat for cleaner code */
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
 }
-.i_cons img{
+
+.i_cons img {
     width: 340px;
     border-radius: 10px;
     display: block;
 }
 
-
-
-@media (max-width:900px){
-    .services { grid-template-columns: repeat(1, 1fr,1); 
+@media (max-width: 900px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for mobile view */
     }
 
-    .i_cons img{
-        width:150px;
+    .i_cons img {
+        width: 150px;
     }
-     
 }
 
 
