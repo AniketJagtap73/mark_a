@@ -1,0 +1,28 @@
+.programs{
+    margin:80px auto;
+    margin-bottom: 200px;
+    width:90%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.prog img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    
+}
+.prog{
+    flex-basis: 31%;
+}
+
+
+@media (max-width:750px){
+    .programs{
+        flex-direction: column;
+    }
+    .prog{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
